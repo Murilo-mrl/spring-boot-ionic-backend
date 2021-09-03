@@ -1,6 +1,5 @@
 package com.aprendendo.cursomc.services;
 
-import java.nio.channels.UnsupportedAddressTypeException;
 import java.util.List;
 import java.util.Optional;
 
@@ -11,7 +10,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
-import com.aprendendo.cursomc.domain.Cliente;
 import com.aprendendo.cursomc.domain.Cliente;
 import com.aprendendo.cursomc.dto.ClienteDTO;
 import com.aprendendo.cursomc.repositories.ClienteRepository;
@@ -62,6 +60,5 @@ public class ClienteService {
 	private void updateData(Cliente newObj, Cliente obj) {
 		newObj.setNome(obj.getNome());
 		newObj.setEmail(obj.getEmail());
-		
 	}
 }
